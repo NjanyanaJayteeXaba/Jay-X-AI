@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay-XO Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game-card">
+      <h1 class="game-title">Jay-XO</h1>
+      
+      <div class="game-mode">
+        <button id="two-players" class="mode-button active">2 Players</button>
+        <button id="vs-ai" class="mode-button">vs AI</button>
+      </div>
+      
+      <div id="status" class="game-status">Player X's turn</div>
+      
+      <div class="game-board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      
+      <button id="reset-button" class="reset-button">Reset Game</button>
+      
+      <div class="scoreboard">
+        <div class="score-item">
+          <div class="player-x">Player X</div>
+          <div id="score-x" class="score">0</div>
+        </div>
+        <div class="score-item">
+          <div class="player-draw">Draws</div>
+          <div id="score-draw" class="score">0</div>
+        </div>
+        <div class="score-item">
+          <div class="player-o">Player O</div>
+          <div id="score-o" class="score">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+/* Game card */
+.game-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.game-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Game mode toggles */
+.game-mode {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.mode-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mode-button:hover {
+  background-color: #f3f4f6;
+}
+
+.mode-button.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+/* Game status */
+.game-status {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.game-status.animate {
+  animation: pulse 0.5s ease;
+}
+
+/* Game board */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+  aspect-ratio: 1/1;
+}
+
+.cell {
+  background-color: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cell:hover:not(.x):not(.o) {
+  background-color: #ebf5ff;
+}
+
+.cell.x {
+  color: #3b82f6;
+}
+
+.cell.o {
+  color: #ef4444;
+}
+
+.cell.x.winning {
+  background-color: #dbeafe;
+}
+
+.cell.o.winning {
+  background-color: #fee2e2;
+}
+
+.cell.animate {
+  animation: pulse 0.5s ease;
+}
+
+/* Reset button */
+.reset-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #2563eb;
+}
+
+.reset-button:active {
+  transform: scale(0.98);
+}
+
+/* Scoreboard */
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.score-item {
+  text-align: center;
+}
+
+.player-x {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.player-draw {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.player-o {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
