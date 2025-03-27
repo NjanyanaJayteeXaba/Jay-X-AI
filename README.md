@@ -40,14 +40,6 @@ The AI opponent follows these strategies:
 
 Simply open the [`index.html` file](https://njanyanajayteexaba.github.io/) in your browser to start playing.
 
-## How to Host on GitHub Pages
-
-1. Create a new GitHub repository
-2. Upload the project files to the repository
-3. Go to the repository settings
-4. Scroll down to the GitHub Pages section
-5. Select the main branch as the source
-6. Your game will be published at `https://[your-username].github.io/[repo-name]/`
 
 ## License
 
