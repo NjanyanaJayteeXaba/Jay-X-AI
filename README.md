@@ -1,4 +1,4 @@
-# Jay-XO Game
+# Jay-X-Ai Game
 
 A simple, fun Tic-Tac-Toe game built with HTML, CSS, and JavaScript. Play against a friend or challenge the AI opponent.
 
@@ -38,7 +38,7 @@ The AI opponent follows these strategies:
 
 ## How to Run
 
-Simply open the `index.html` file in your browser to start playing.
+Simply open the [`index.html` file](https://njanyanajayteexaba.github.io/) in your browser to start playing.
 
 ## How to Host on GitHub Pages
 
