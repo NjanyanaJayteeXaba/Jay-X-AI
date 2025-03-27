@@ -38,7 +38,7 @@ The AI opponent follows these strategies:
 
 ## How to Run
 
-Simply open the [`index.html` file](https://njanyanajayteexaba.github.io/) in your browser to start playing.
+Simply open the [`index.html` file](https://njanyanajayteexaba.github.io/Jay-X-Ai_Game/) in your browser to start playing.
 
 
 ## License
